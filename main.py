@@ -1,8 +1,8 @@
 from src.masks import get_mask_account, get_mask_card_number
 from src.widget import get_date, mask_account_card
 
-card_number = input()
-mask_count = input()
+card_number = input("Введите номер карты:\n")
+mask_count = input("Введите номер счета:\n")
 
 result_get_card_number = get_mask_card_number(card_number)
 result_get_mask_account = get_mask_account(mask_count)

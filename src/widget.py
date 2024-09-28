@@ -9,6 +9,7 @@ def mask_account_card(info):
 
     if 'Счет' in card_type:
         masked_number = f"{card_type} **{number[-4:]}"
+
     else:
         masked_number = f"{card_type} {number[:4]} {number[4:6]}** **** {number[-4:]}"
 
