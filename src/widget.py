@@ -7,7 +7,7 @@ def mask_account_card(info: str) -> str:
     # Создаем номер
     number = parts[-1]
 
-    if 'Счет' in card_type:
+    if "Счет" in card_type:
         masked_number = f"{card_type} **{number[-4:]}"
 
     else:
