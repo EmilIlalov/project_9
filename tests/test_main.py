@@ -59,6 +59,22 @@ def transaction_descriptions():
     return transactions
 
 
-@pytest.fixture
+@pytest.mark.parametrize(
+    "start, stop, expected",
+    [
+        (
+            0,
+            5,
+            [
+                "0000 0000 0000 0000",
+                "0000 0000 0000 0001",
+                "0000 0000 0000 0002",
+                "0000 0000 0000 0003",
+                "0000 0000 0000 0004",
+                "0000 0000 0000 0005",
+            ],
+        )
+    ],
+)
 def card_number_generator():
     return
