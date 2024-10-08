@@ -75,6 +75,17 @@ def transaction_descriptions():
             ],
         )
     ],
+    [
+        (
+            10,
+            12,
+            [
+                "0000 0000 0000 0010",
+                "0000 0000 0000 0011",
+                "0000 0000 0000 0012"
+            ]
+        ),
+    ]
 )
 def card_number_generator():
     return
